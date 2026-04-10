@@ -1,0 +1,397 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,600;1,6..72,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error": "#ba1a1a",
+                    "on-surface-variant": "#43474d",
+                    "on-tertiary-fixed": "#2e1500",
+                    "on-tertiary-container": "#cc8442",
+                    "surface": "#f7f9fb",
+                    "surface-container-highest": "#e0e3e5",
+                    "inverse-primary": "#b4c8e4",
+                    "on-primary-fixed": "#061d32",
+                    "primary": "#03192e",
+                    "on-secondary-container": "#57657a",
+                    "primary-fixed": "#d1e4ff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f2f4f6",
+                    "on-tertiary-fixed-variant": "#6d3a00",
+                    "surface-dim": "#d8dadc",
+                    "primary-container": "#1a2e44",
+                    "on-tertiary": "#ffffff",
+                    "secondary-container": "#d5e3fc",
+                    "tertiary-fixed": "#ffdcc2",
+                    "on-secondary-fixed-variant": "#3a485b",
+                    "on-secondary-fixed": "#0d1c2e",
+                    "tertiary-container": "#472400",
+                    "secondary": "#515f74",
+                    "inverse-on-surface": "#eff1f3",
+                    "on-error-container": "#93000a",
+                    "surface-variant": "#e0e3e5",
+                    "tertiary": "#2a1200",
+                    "primary-fixed-dim": "#b4c8e4",
+                    "on-primary": "#ffffff",
+                    "on-surface": "#191c1e",
+                    "outline-variant": "#c4c6cd",
+                    "surface-tint": "#4c6078",
+                    "surface-container": "#eceef0",
+                    "inverse-surface": "#2d3133",
+                    "secondary-fixed-dim": "#b9c7df",
+                    "on-primary-container": "#8296b0",
+                    "on-background": "#191c1e",
+                    "on-primary-fixed-variant": "#35485f",
+                    "on-secondary": "#ffffff",
+                    "surface-container-high": "#e6e8ea",
+                    "secondary-fixed": "#d5e3fc",
+                    "background": "#f7f9fb",
+                    "outline": "#74777d",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb77b",
+                    "surface-bright": "#f7f9fb",
+                    "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Newsreader"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body { font-family: 'Newsreader', serif; }
+        h1, h2, h3, h4, button, nav { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-tertiary-fixed selection:text-on-tertiary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-extrabold tracking-tighter text-slate-900 uppercase" style="">
+                New Concepts
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-slate-900 border-b-2 border-amber-600 pb-1 font-bold tracking-tight" href="#" style="">Home</a>
+<a class="text-slate-600 font-medium hover:text-slate-900 transition-colors tracking-tight" href="#" style="">Kitchens</a>
+<a class="text-slate-600 font-medium hover:text-slate-900 transition-colors tracking-tight" href="#" style="">Bathrooms</a>
+<a class="text-slate-600 font-medium hover:text-slate-900 transition-colors tracking-tight" href="#" style="">Gallery</a>
+<a class="text-slate-600 font-medium hover:text-slate-900 transition-colors tracking-tight" href="#" style="">Contact</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-lg font-bold text-sm tracking-tight hover:scale-105 transition-transform active:scale-95 duration-150" style="">
+                Request a Quote
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-primary">
+<div class="absolute inset-0 opacity-40">
+<img alt="Luxury kitchen interior" class="w-full h-full object-cover" data-alt="Ultra-modern luxury kitchen with dark oak cabinetry, marble waterfall island, and warm designer pendant lighting in an architectural space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw5yeYu9DAACscUqzVX9ECSpI2x2wABX9uyOJtKt03A-Xs4-J9w6ZTf42qexnqziCMZ_D-VRT8B02Jq_uXcabvoLK8QEkZYxD-cuGGPuZomULgoZDpA2P9j9LYo-kuQhr4IFjNOBhuteYZcPfrZ2guJLeYfK1E7LPO-dU1G1FcSGGXKF4gE3hDy6HwHP3e2FP71ykTOMdQiv-kqW-ybsax_18p6i1py09EycfgXqX9MBjneOZsKR2xEtiXEnMFBefTlTukJNpu8XA" style="">
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/60 to-transparent"></div>
+<div class="relative max-w-7xl mx-auto px-8 w-full z-10 grid md:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center space-x-2 bg-tertiary-fixed/10 px-4 py-2 rounded-full">
+<span class="w-2 h-2 bg-tertiary-fixed-dim rounded-full"></span>
+<span class="text-tertiary-fixed-dim font-bold text-xs uppercase tracking-widest font-headline" style="">Est. 2004 • Coon Rapids, MN</span>
+</div>
+<h1 class="text-6xl md:text-8xl font-extrabold text-white leading-[1.1] tracking-tighter font-headline" style="">
+                    Transforming Homes in Minnesota for <span class="text-tertiary-fixed-dim italic font-light" style="">20 Years</span>
+</h1>
+<p class="text-xl md:text-2xl text-on-primary-container font-body italic max-w-xl" style="">
+                    Thousands of successful projects, one dream at a time. We don't just remodel; we craft environments that elevate your daily living.
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-tertiary-fixed-dim text-tertiary-container px-8 py-4 rounded font-bold hover:bg-tertiary-fixed transition-colors" style="">
+                        Contact Us</button>
+<button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded font-bold hover:bg-white/20 transition-colors" style="">
+                        View our portfolio</button>
+</div>
+</div>
+<div class="hidden md:block relative">
+<div class="aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden shadow-2xl transform rotate-3">
+<img alt="Elegant bathroom conversion" class="w-full h-full object-cover" data-alt="Elegant master bathroom featuring a freestanding tub, slate tiles, and industrial copper fixtures with soft natural light from a window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABkhh5mScZ1GkPTsWHNnoMh5Z1U6ptN5dagAgLHFl5jVhW9yKHXfNl80sr22RPTv-3oRb3c0opWvvXmlYRchlq5K-U1cbN_t8MFm66mfjiMG_iQSInPqZGpHDQlrUkqFgjAKPcYO1LX22ahxgel1AHlESwDFTA1eUnCWrGy5crJSmTmMVY3aSSasR8R5d2pUqkH786TiC_snqLqk5yLCSkj582HRmun_qpPgrVaa3ib8usgpKMEm2KVikx3xYW5HCRTZI2VXiIf9k" style="">
+<div class="absolute bottom-6 left-6 right-6 bg-surface-container-lowest p-6 rounded shadow-lg">
+<p class="font-headline font-bold text-primary uppercase text-xs tracking-widest mb-1" style="">Featured Project</p>
+<p class="font-body italic text-lg text-secondary" style="">The Riverbend Bath Conversion</p>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Services Grid -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<h2 class="text-4xl md:text-6xl font-extrabold text-primary mb-6 font-headline tracking-tight" style="">Our Specialized Craft</h2>
+<p class="text-xl text-secondary font-body italic" style="">We focus on the heart of the home, bringing technical precision to spaces that require the most detail.</p>
+</div>
+<div class="hidden md:block">
+<span class="text-on-tertiary-container font-bold text-xs uppercase tracking-[0.3em] font-headline" style="">Quality Guaranteed</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Kitchen Remodeling -->
+<div class="group relative bg-surface-container-lowest p-4 rounded transition-all hover:translate-y-[-8px]">
+<div class="aspect-[16/10] overflow-hidden mb-8">
+<img alt="Kitchen renovation details" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Close-up of high-end kitchen renovation showing custom white shaker cabinets, gold hardware, and a marble backsplash in morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWgkmgZU_jumjoWc7cKqr6kQK2TxDqbnPtqZYehXfHtTRyc478DeN1nlOrc90tzv6SYPPI_eJY9OxwLViILeJMfAGbdZm2E9J5W0G1Id0vwn7s4AvSIucEo2--E9LE1LME41D6qpDw120hif-KlYC5lcOTxGxycwHJGTni0axR8rp-kXtwcE0m694ssygea-_V7nuWSUEcR8dE2-6zvlFykJA1fFkr-i2DvglcM38hUlF9YultLmyaKCZV_I2CHQtIugXsU7VqPR8" style="">
+</div>
+<div class="px-4 pb-8">
+<span class="text-tertiary-fixed-variant font-bold text-xs uppercase tracking-widest font-headline" style="">Service 01</span>
+<h3 class="text-3xl font-bold text-primary mt-2 mb-4 font-headline" style="">Kitchen Remodeling</h3>
+<p class="text-lg text-secondary font-body mb-6 italic leading-relaxed" style="">
+                            From open-concept layouts to gourmet chef stations, we rethink your kitchen's feel. Our process balances ergonomic flow with aesthetic impact.
+                        </p>
+<a class="inline-flex items-center text-primary font-bold tracking-tight hover:text-tertiary-fixed-variant transition-colors" href="#" style="">
+                            Explore Kitchen Gallery 
+                            <span class="material-symbols-outlined ml-2" style="">arrow_right_alt</span>
+</a>
+</div>
+</div>
+<!-- Bathroom Conversions -->
+<div class="group relative bg-surface-container-lowest p-4 rounded transition-all hover:translate-y-[-8px]">
+<div class="aspect-[16/10] overflow-hidden mb-8">
+<img alt="Modern walk-in shower" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Modern spa-like bathroom with walk-in glass shower, rain shower head, and grey slate textured tiles with mood lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP8QxBNYrwuoj7Fspn8x_H-DH0hZXUBBKSqXZ4ahmzVZEWCAfzQmbMrn3UllkZvIH1G78SOkscGVxBCO3ke8IjpzuLgZ3AADIU2H8eBoJpdp_y0rNv1Vrh4AXmjyYXvd28NPnQz_wWz1SzZf7imhNa6vXmAOIWzEayPPHnz8yEoG3li6wp3k_8cuxoNppWeI2adRamMSsEPU8-EGtBVMPYb7_v8JnbUaebuzzUMJCNhmUuk472rUWKwlII8mxW-p8-vwJg4R3v4FE" style="">
+</div>
+<div class="px-4 pb-8">
+<span class="text-tertiary-fixed-variant font-bold text-xs uppercase tracking-widest font-headline" style="">Service 02</span>
+<h3 class="text-3xl font-bold text-primary mt-2 mb-4 font-headline" style="">Bath &amp; Shower Conversions</h3>
+<p class="text-lg text-secondary font-body mb-6 italic leading-relaxed" style="">
+                            Turn outdated bathrooms into sanctuary-like retreats. We specialize in curating textures and fixtures that provide a daily spa experience.
+                        </p>
+<a class="inline-flex items-center text-primary font-bold tracking-tight hover:text-tertiary-fixed-variant transition-colors" href="#" style="">
+                            View Bath Transformations 
+                            <span class="material-symbols-outlined ml-2" style="">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 relative">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-tertiary-fixed/20 rounded-full blur-3xl"></div>
+<div class="relative z-10 border-l-4 border-tertiary-fixed-dim pl-12">
+<h2 class="text-5xl font-extrabold text-primary mb-8 font-headline" style="">Built on Trust, <br>Refined by Time.</h2>
+<div class="space-y-12">
+<div class="flex gap-6">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-white" style="">verified</span>
+</div>
+<div>
+<h4 class="font-bold text-xl text-primary font-headline mb-2" style="">20 Years of Local Legacy</h4>
+<p class="text-secondary font-body italic text-lg" style="">Deeply rooted in Coon Rapids, we’ve spent two decades building relationships through reliable results.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-white" style="">handyman</span>
+</div>
+<div>
+<h4 class="font-bold text-xl text-primary font-headline mb-2" style="">Owner-Managed Precision</h4>
+<p class="text-secondary font-body italic text-lg" style="">Local ownership means accountability. Our owners are present, ensuring every detail meets our "New Concept" standard.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-white" style="">architecture</span>
+</div>
+<div>
+<h4 class="font-bold text-xl text-primary font-headline mb-2" style="">Bespoke Design Strategy</h4>
+<p class="text-secondary font-body italic text-lg" style="">We don't use templates. Every home receives a custom architectural plan tailored to the family's unique lifestyle.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4 mt-12">
+<img alt="Detail of carpentry work" class="w-full h-80 object-cover rounded shadow-lg" data-alt="Artisan hands measuring a custom oak cabinet door in a sun-drenched workshop with wood shavings visible" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfZSTxNAKow_kqKerp8L-TT3IL0c5Qj3ix9JGKevfkBaF7oq9rEb9YI9XrXh9-1MPn3LamgmsyRZye1aWoYpo4zi9C8aOu-NDLhUZT3Jw0Ws8tqa6mSDiDdrRjuilk-I0vCB29rsUqyXXqDFzDVURraVGZaQRflyQXVxFQuKBesx8ZLzRPyrh4cWpj4q-z0ndZJzfXcAbURVHYutgU2WqMldytOKyJt1iP79HLTiyWdf6uGXyUn17geapCoolDPc2lbjOSol6CIUU" style="">
+<div class="bg-primary p-8 rounded text-white text-center">
+<p class="text-5xl font-extrabold font-headline mb-1" style="">1k+</p>
+<p class="text-xs uppercase tracking-widest opacity-60" style="">Projects Completed</p>
+</div>
+</div>
+<div class="space-y-4">
+<div class="bg-tertiary-fixed-dim p-8 rounded text-tertiary-container text-center">
+<p class="text-5xl font-extrabold font-headline mb-1" style="">20</p>
+<p class="text-xs uppercase tracking-widest opacity-60" style="">Years in Business</p>
+</div>
+<img alt="Exterior of a beautiful home" class="w-full h-80 object-cover rounded shadow-lg" data-alt="Beautifully remodeled modern suburban home exterior at dusk with architectural lighting highlighting brick and wood siding" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBL8FI77QVpLXNW6x-7MvyBbkNZ2qhGmNWZbY9emzeBKM6Q5DHF_B4O8wxM93DWd5RhzkRLxeAdAQin7GrvRuts_Isb9bH6LXi6Mu8tqQfwji_n6flHJspXnSvMZYVvRKldb3pzIZFbPGyFKH1fT2lUASjQ_dnRkpl87SlMeuzPdn5o-pLWyCxIJR9Z1x9xdeAwAxXwuZlJXr9WQAEII5XsxLyzxbqkqBq0FEHaNthSdJbZMYUlLGdktdTYf0p3UToYS4HPlzY70uI" style="">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-20">
+<h2 class="text-4xl md:text-5xl font-extrabold text-primary font-headline mb-4" style="">Voices of our Clients</h2>
+<div class="w-24 h-1 bg-tertiary-fixed-dim mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-lowest p-10 relative">
+<span class="material-symbols-outlined text-6xl text-surface-container-high absolute top-4 right-8 opacity-50" style="">format_quote</span>
+<div class="flex gap-1 mb-6">
+<span class="material-symbols-outlined text-tertiary-fixed-dim" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="text-xl text-primary font-body italic mb-8 leading-relaxed" style="">
+                        "The level of detail in our kitchen remodel was staggering. They thought of things I never would have—like the specific placement of lighting for prep work. Truly professional."
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest overflow-hidden">
+<img alt="Client" data-alt="Portrait of a satisfied male homeowner in his 40s smiling warmly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACLtJ4MYxO3G-HMa6xROzerts08YXsofjhS_ThKO1Eg748zFFEE55wrR09kCqLsKBpGId2DxeSKdOwQvlv5Vx4BKAh1rWZz2dsefvwPDEvD-q8vHm-qwSTEJO4dqKUe_keYHuqzLb9is9UtMV-lsL0yG_nvAmuMwO_ltlnGvBqFQli0WONPUqflWhwWk7ogYpiM8pS4jIxZ8V3UGzxleZIUlQ_mVeGTrtNGraEFY49ybvhOgYMSOLIcyASkW2keEOLlE7y090l6aA" class="" style="">
+</div>
+<div>
+<p class="font-bold text-primary font-headline text-sm" style="">David Henderson</p>
+<p class="text-secondary text-xs font-headline uppercase tracking-tighter" style="">Coon Rapids Resident</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-primary p-10 relative text-white">
+<span class="material-symbols-outlined text-6xl text-white/5 absolute top-4 right-8" style="">format_quote</span>
+<div class="flex gap-1 mb-6">
+<span class="material-symbols-outlined text-tertiary-fixed-dim" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="text-xl text-on-primary-container font-body italic mb-8 leading-relaxed" style="">
+                        "Choosing a local company mattered to us. New Concepts treated our home with such respect. Our bathroom conversion feels like a five-star hotel now."
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-white/20 overflow-hidden border-2 border-tertiary-fixed-dim">
+<img alt="Client" data-alt="Portrait of a happy middle-aged woman with a friendly expression in a modern setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD11iEyaHH5-iGqLFbPMgw-bus4HD-1-LKDf7zW1O_B6_h1T-w2JvwwnqUxJtNVsvz_cxOwOHZL7s5qzo6XhWa6UnbJHWp9NaJJrOADLQXPNw2Z5UVuRbBW7j4nrC46TOVR4EtCURG1Cb5CuX9qsbHSk7T58Q9xXDJTsdAD3WnZqJvrkaaFLZx8z78sklKFlpZ_1sBL8r1ZjV-XjX5V2VutI_0t8_NoXfbgelPBCkAKK9jPIBOYMaref-q2vLPK-wGe_DUX6K7I4tg" class="" style="">
+</div>
+<div>
+<p class="font-bold text-white font-headline text-sm" style="">Sarah Miller</p>
+<p class="text-on-primary-container text-xs font-headline uppercase tracking-tighter" style="">Blaine Neighbor</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-container-lowest p-10 relative">
+<span class="material-symbols-outlined text-6xl text-surface-container-high absolute top-4 right-8 opacity-50" style="">format_quote</span>
+<div class="flex gap-1 mb-6">
+<span class="material-symbols-outlined text-tertiary-fixed-dim" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="text-xl text-primary font-body italic mb-8 leading-relaxed" style="">
+                        "They finished ahead of schedule and the craftsmanship is superior. The hardwood transitions and custom tile work are flawless. Highly recommended."
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest overflow-hidden">
+<img alt="Client" data-alt="Close-up portrait of a professional man in a collared shirt looking confident and pleased" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaPOZtRLyDotNzk1PSBel_ytm_iGVyOGR-jV_cyUIrTyUVCeHyPbdAlMsGS3f9cLo3A-I9PB9uqFkfpboI6uJR-B10BbIke410D5BJXG0XjbczW0nO326eMswIo2k-WbIuz_cyXV-fJE7pEEYsCkgW9eYvb0ow5gxXVFb5XeVheikd9MXfd5_o9V7Ef2oWYiMCBd_b05VKCMqxxSBGejnVNkc4UKk3QTd-lDoTn4d21cJ1PSnWFcVULcNY4lLFpDH3mJJgkeQmH1U" class="" style="">
+</div>
+<div>
+<p class="font-bold text-primary font-headline text-sm" style="">Mark Thompson</p>
+<p class="text-secondary text-xs font-headline uppercase tracking-tighter" style="">Anoka Homeowner</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24 px-8">
+<div class="max-w-5xl mx-auto bg-gradient-to-br from-primary to-primary-container rounded-2xl overflow-hidden relative shadow-2xl">
+<div class="absolute inset-0 opacity-10">
+<img alt="Background detail" class="w-full h-full object-cover" data-alt="Architectural sketch of a home floor plan overlaid with subtle textures of marble and wood grain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ9RZa0oXmc1sTLxmuD65RqIVVv7l7MAS2YZM0RJqSjHgFX3M__-yQw7tvue_bGxorn_UE2VHD7acPZi99uk3H2rxlJNFJVvjcxSltFBVyhM8EmoVZ-xDDFxHUb17VA_PVjrpxEsbnGzYPPJ7t1TEzvC_IpCegEIoiWhwNoFwKkscfXbo3ER2h-fvGpVUAL6VJiyMijTFPshPbKY_OO3hIPQVbLVIoACyVJQvk9Y_sBzNV6_tW9dePvUlsXXnRNpuNX0dauy3wFLw" style="">
+</div>
+<div class="relative z-10 px-12 py-20 text-center space-y-8">
+<h2 class="text-4xl md:text-6xl font-extrabold text-white font-headline leading-tight" style="">Ready to Start Your <br><span class="italic font-body font-light text-tertiary-fixed-dim" style="">Transformation?</span></h2>
+<p class="text-xl text-on-primary-container font-body italic max-w-2xl mx-auto" style="">
+                    Let’s discuss your vision. Our initial consultation is a collaborative exploration of what’s possible for your space.
+                </p>
+<div class="pt-4">
+<button class="bg-tertiary-fixed-dim text-tertiary-container px-12 py-5 rounded-full font-extrabold text-lg hover:scale-105 transition-transform active:scale-95 shadow-xl" style="">
+                        Request Your Custom Quote
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 bg-slate-100">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-8 py-16 max-w-7xl mx-auto">
+<!-- Brand & Info -->
+<div class="space-y-6">
+<div class="text-xl font-bold font-['Manrope'] text-slate-900" style="">New Concepts</div>
+<p class="font-['Newsreader'] italic text-lg text-slate-700 leading-relaxed" style="">
+                    Excellence in remodeling for over 20 years. Based in Coon Rapids, serving the entire Twin Cities metro with architectural precision and local integrity.
+                </p>
+</div>
+<!-- Quick Links -->
+<div class="grid grid-cols-2 gap-8">
+<div class="space-y-4">
+<h5 class="font-headline font-bold text-xs uppercase tracking-widest text-primary" style="">Services</h5>
+<ul class="space-y-2">
+<li class="" style=""><a class="text-slate-500 hover:text-slate-900 hover:underline transition-all" href="#" style="">Kitchens</a></li>
+<li class="" style=""><a class="text-slate-500 hover:text-slate-900 hover:underline transition-all" href="#" style="">Bathrooms</a></li>
+<li class="" style=""><a class="text-slate-500 hover:text-slate-900 hover:underline transition-all" href="#" style="">Basements</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-headline font-bold text-xs uppercase tracking-widest text-primary" style="">Company</h5>
+<ul class="space-y-2">
+<li class="" style=""><a class="text-slate-500 hover:text-slate-900 hover:underline transition-all" href="#" style="">Gallery</a></li>
+<li class="" style=""><a class="text-slate-500 hover:text-slate-900 hover:underline transition-all" href="#" style="">About Us</a></li>
+<li class="" style=""><a class="text-slate-500 hover:text-slate-900 hover:underline transition-all" href="#" style="">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<!-- Contact -->
+<div class="space-y-6">
+<h5 class="font-headline font-bold text-xs uppercase tracking-widest text-primary" style="">Visit Our Studio</h5>
+<div class="space-y-2 text-slate-700 font-body italic text-lg">
+<p class="" style="">1234 Craftsmanship Way</p>
+<p class="" style="">Coon Rapids, MN 55433</p>
+<p class="pt-4 font-headline font-bold not-italic text-primary" style="">(763) 555-0192</p>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 py-8 border-t border-slate-200/50 text-slate-500 text-sm font-label flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="" style="">© 2024 New Concepts Remodeling. Coon Rapids, MN. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="hover:text-slate-900 transition-colors" href="#" style="">Privacy Policy</a>
+<a class="hover:text-slate-900 transition-colors" href="#" style="">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>
