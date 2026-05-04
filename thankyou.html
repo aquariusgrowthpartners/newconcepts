@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>Thank You | Atelier Remodeling</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+        <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#f7f9fb",
+                        "primary-container": "#1a2e44",
+                        "on-secondary-container": "#57657a",
+                        "on-primary-container": "#8296b0",
+                        "on-secondary-fixed-variant": "#3a485b",
+                        "surface": "#f7f9fb",
+                        "secondary-fixed": "#d5e3fc",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#f2f4f6",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#d8dadc",
+                        "tertiary-fixed-dim": "#ffb77b",
+                        "tertiary": "#2a1200",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#eceef0",
+                        "tertiary-fixed": "#ffdcc2",
+                        "surface-container-high": "#e6e8ea",
+                        "on-tertiary-container": "#cc8442",
+                        "outline-variant": "#c4c6cd",
+                        "inverse-primary": "#b4c8e4",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary": "#515f74",
+                        "tertiary-container": "#472400",
+                        "background": "#f7f9fb",
+                        "secondary-container": "#d5e3fc",
+                        "outline": "#74777d",
+                        "on-primary-fixed-variant": "#35485f",
+                        "on-background": "#191c1e",
+                        "on-tertiary-fixed-variant": "#6d3a00",
+                        "primary-fixed": "#d1e4ff",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#191c1e",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#b9c7df",
+                        "surface-tint": "#4c6078",
+                        "on-primary-fixed": "#061d32",
+                        "primary": "#03192e",
+                        "on-surface-variant": "#43474d",
+                        "on-tertiary-fixed": "#2e1500",
+                        "primary-fixed-dim": "#b4c8e4",
+                        "surface-variant": "#e0e3e5",
+                        "on-secondary-fixed": "#0d1c2e",
+                        "surface-container-highest": "#e0e3e5",
+                        "inverse-surface": "#2d3133",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#eff1f3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "display": ["Manrope"],
+                        "body": ["Newsreader"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+        <style>.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; } body { font-family: 'Newsreader', serif; } h1, h2, h3, h4, .sans { font-family: 'Manrope', sans-serif; }</style>
+    </head>
+    <body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen">
+        <!-- TopNavBar -->
+        <nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-2xl dark:bg-slate-900/70">
+            <div class="flex justify-between items-center w-full px-8 h-20 max-w-7xl mx-auto">
+                <div class="text-xl font-bold uppercase tracking-widest text-slate-900 dark:text-white sans">new concepts</div>
+                <div class="hidden md:flex items-center gap-8">
+                    <a class="text-slate-500 dark:text-slate-400 font-medium pb-1 hover:text-amber-600 dark:hover:text-amber-400 transition-colors duration-300 sans" href="index.html">Home</a>
+                    <a class="text-slate-500 dark:text-slate-400 font-medium pb-1 hover:text-amber-600 dark:hover:text-amber-400 transition-colors duration-300 sans" href="kitchen.html">Kitchen</a>
+                    <a class="text-slate-500 dark:text-slate-400 font-medium pb-1 hover:text-amber-600 dark:hover:text-amber-400 transition-colors duration-300 sans" href="bathroom.html">Bathrooms</a>
+                    <a class="text-slate-500 dark:text-slate-400 font-medium pb-1 hover:text-amber-600 dark:hover:text-amber-400 transition-colors duration-300 sans" href="gallery.html">Gallery</a>
+                    <a class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-lg font-bold transition-transform active:scale-95 sans" href="landingpage.html">
+                    Book Consultation </a>
+                </div>
+                <button class="md:hidden text-primary">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </nav>
+        <main class="flex-grow pt-20">
+            <!-- Hero Section -->
+            <section class="relative min-h-[716px] flex items-center overflow-hidden">
+                <div class="absolute inset-0 z-0">
+                    <img class="w-full h-full object-cover" data-alt="A luxury contemporary kitchen featuring seamless white oak cabinetry and a massive dark slate island under soft architectural recessed lighting. The space is vast and minimalist, showcasing high-end craftsmanship and an editorial aesthetic with warm morning sunlight streaming through floor-to-ceiling windows. The global color palette emphasizes deep primary blues and warm tertiary copper accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA12VYYjGVKw1XT1EO3BbkftzoK_K-kj4UF25JvaewgMM8z8gcgNnm2AZZtAv_rywDtLtuKzTlNI_UMPydUm20yPTClHViFYbTMFAudYNdUEro3VJ6sCtaWEdoI_W7c6KipUV31wdZdDyzuRrow2UKqpurtb-_hFh37VtCIpitq2ohqQJ5GdWB9oUrn2vJwBcPSdRDcEcyBkJgLwr999dlrNbGBV98n8ArqH5qZ0uVrG4V_626wIxAKIbEqksreSj96L57DgTBvIvI"/>
+                    <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/40"></div>
+                </div>
+                <div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+                    <div class="max-w-2xl">
+                        <span class="inline-block bg-tertiary-fixed-dim text-on-tertiary-fixed px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6 sans">Inquiry Received</span>
+                        <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                        Thank You for <br/><span class="text-tertiary-fixed-dim">Reaching Out!</span></h1>
+                        <p class="text-xl md:text-2xl text-on-primary-container font-body italic leading-relaxed">We&apos;ve received your submission and our team will contact you shortly.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Info & Studio Details -->
+            <section class="py-24 bg-surface-container-low">
+                <div class="max-w-7xl mx-auto px-8">
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+                        <div class="md:col-span-5">
+                            <h2 class="text-sm font-bold uppercase tracking-[0.2em] text-on-tertiary-container mb-4 sans">contact us</h2>
+                            <div class="space-y-8">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-12 h-12 flex items-center justify-center bg-white rounded-xl text-primary flex-shrink-0">
+                                        <span class="material-symbols-outlined">call</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-primary sans">Phone</h4>
+                                        <p class="text-secondary">715-566-4639</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <div class="w-12 h-12 flex items-center justify-center bg-white rounded-xl text-primary flex-shrink-0">
+                                        <span class="material-symbols-outlined">mail</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-primary sans">Email</h4>
+                                        <p class="text-secondary">info@newconceptsmn.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-7 bg-white p-2 rounded-xl">
+                            <div class="aspect-video w-full rounded-lg overflow-hidden relative group">
+                                <img class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0" data-alt="A modern architectural studio interior featuring large drafting tables, material swatch boards with marble and oak samples, and high-end computer workstations. The lighting is bright and natural, creating an atmosphere of professional precision and creative luxury. The aesthetic is clean and organized, mirroring the architectural excellence of Atelier Remodeling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrehHC7aYInJnAT81w0Lk_dEdZFCi6zokQq1c9woZxoS327VEXYp9pa08ZWrwkH0OJ0H_Gimh0R7PZ8tqEC9RAI0C_LJ1x8jyhf60PNsQPXQVrRYab9TIkUg79mJy2R_7jG1eNtiY19GcNKnuFXveg15h6L09taJ2LfyXcxsvge8Dkv2twszOrJJMun1ZTRbefS19BvRoDEBH4IREB3XWIhECuwL1MYQvpwVu9kWF0bYDNHJBN09_2WXnXXbMX6S8xBVlN8ZVOsaQ">
+                                <div class="absolute inset-0 bg-primary/20 pointer-events-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Testimonials Section -->
+            <section class="py-24 bg-white overflow-hidden">
+                <div class="max-w-7xl mx-auto px-8">
+                    <div class="text-center mb-16">
+                        <h2 class="text-sm font-bold uppercase tracking-[0.2em] text-on-tertiary-container mb-4 sans">Client Voices</h2>
+                        <h3 class="text-4xl md:text-5xl font-bold text-primary sans">Trust Forged Through Craft</h3>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Testimonial 1 -->
+                        <div class="p-10 bg-surface-container-low rounded-lg border-b-4 border-tertiary-fixed-dim relative transition-transform hover:-translate-y-2 duration-300">
+                            <span class="material-symbols-outlined text-4xl text-tertiary-fixed-dim absolute -top-4 left-6" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+                            <p class="text-xl italic text-on-surface mb-8 pt-4">We hired Jeremy to do a several home remodeling projects and were so happy with his work. He helped us early on with multiple estimates so that we could prioritize our projects and made professional recommendations so that we could get the most bang for our buck.
+Jeremy always showed up when he said he would, left his work space clean at the end of every work day, and was so considerate about making sure our space was livable during our remodeling. His estimates were solid and included all the things that I wouldn&apos;t think to ask about. He truly is a professional and does beautiful high quality work. He built things from scratch when we weren&apos;t happy with the prefab options. I appreciated that he kept me involved and updated on progress and anything that needed to change. It felt like Jeremy cared as much about my house as I do.</p>
+                            <div>
+                                <p class="font-bold text-primary sans uppercase tracking-widest text-xs">Melissa Arbuckle</p>
+                                <p class="text-on-secondary-container text-xs sans"></p>
+                            </div>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div class="p-10 bg-primary text-white rounded-lg relative transition-transform hover:-translate-y-2 duration-300">
+                            <span class="material-symbols-outlined text-4xl text-tertiary-fixed-dim absolute -top-4 left-6" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+                            <p class="text-xl italic mb-8 pt-4">Jeremy did a bathroom remodel, which included a new tile shower, for us last week. He started the job when he said he would and worked consistently until complete. When he was finished everything was spotlessly clean. He was very professional and personable. We would highly recommend him and would use him again. Final result: ABSOLUTELY BEAUTIFUL!</p>
+                            <div>
+                                <p class="font-bold text-tertiary-fixed-dim sans uppercase tracking-widest text-xs"><a href="https://www.google.com/maps/contrib/112156781493195991701/reviews?hl=en" ping="/url?sa=t&amp;source=web&amp;rct=j&amp;url=https%3A%2F%2Fwww.google.com%2Fmaps%2Fcontrib%2F112156781493195991701%2Freviews%3Fhl%3Den&amp;ved=0CDoQzsEIahcKEwjo5On2pJ-UAxUAAAAAHQAAAAAQBg&amp;opi=89978449" style="font-family: Newsreader, serif;">Denny Jorgenson</a></p>
+                            </div>
+                        </div>
+                        <!-- Testimonial 3 -->
+                        <div class="p-10 bg-surface-container-low rounded-lg border-b-4 border-tertiary-fixed-dim relative transition-transform hover:-translate-y-2 duration-300">
+                            <span class="material-symbols-outlined text-4xl text-tertiary-fixed-dim absolute -top-4 left-6" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+                            <p class="text-xl italic text-on-surface mb-8 pt-4">was very impressed with the skill level Jeremy brought to the bathroom redo project that I had. The whirlpool tub needed replacing and it had a complex deck with several angles. Other contractors were considering using four separate cuts for the deck. Jeremy measured, drew a cad-like drawing, developed a pattern to send off to the company making the cultured marble top to assure a one piece top could be made. He took care of ordering the matching vanity top. This was something the other contractors expected me to order and they would install it. I had no idea where to start.
+And the bonus was that every time he left he cleaned up the bathroom so I could continue using it. Great job.</p>
+                            <div>
+                                <p class="font-bold text-primary sans uppercase tracking-widest text-xs">Cindy Millard</p>
+                                <p class="text-on-secondary-container text-xs sans"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-16 flex justify-center">
+                        <a class="inline-flex items-center gap-2 font-bold text-primary border-b-2 border-tertiary transition-all hover:gap-4 sans" href="gallery.html">
+                        View Full Project Portfolio <span class="material-symbols-outlined">arrow_forward</span></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-slate-900 dark:bg-black w-full mt-auto">
+</footer>
+    </body>
+</html>
